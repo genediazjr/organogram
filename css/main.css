@@ -27,6 +27,7 @@
 .node-desc {
     font-size: 12px;
     padding: 5px 10px 20px;
+    white-space: pre;
 }
 
 .node-contact {

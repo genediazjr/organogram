@@ -7,14 +7,56 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="treant.css">
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/util.css">
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
         <div id="organogram"></div>
 
-        <script src="raphael.min.js"></script>
-        <script src="treant.min.js"></script>
-        <script src="main.js"></script>
+        <div class="actions">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editModel">Edit</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#getcodeModel">Get Code</button>
+            <button type="button" class="btn btn-primary" id="reset">Reset</button>
+        </div>
+
+        <div class="modal fade" id="editModel" tabindex="-1" role="dialog" aria-labelledby="editModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Edit Organogram</h4>
+                    </div>
+                    <div class="modal-body">
+                        <textarea id="editcode" class="form-control" rows="20"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="edit-save">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="getcodeModel" tabindex="-1" role="dialog" aria-labelledby="getcodeModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <textarea id="generatedcode" class="form-control" rows="20"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-clipboard-target="#generatedcode" id="get-code">Copy to Clipboard</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/clipboard.min.js"></script>
+        <script src="js/raphael.min.js"></script>
+        <script src="js/treant.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>

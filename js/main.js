@@ -21,93 +21,98 @@ var config = {
 
 ceo = {
     text: {
-        name: 'Mark Hill',
-        title: 'Chief executive officer',
-        contact: 'Tel: 01 213 123 134'
+        name: \`Mark Hill\`,
+        title: \`Chief executive officer\`,
+        contact: \`Tel: 01 213 123 134\`,
+        desc: \`
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a aliquet metus, ut euismod nibh. Maecenas aliquam vehicula lobortis. Aenean sollicitudin tincidunt rutrum. Maecenas vel dolor imperdiet, pretium leo sed, pretium mauris. Nulla facilisi. Integer tristique facilisis aliquet. Fusce aliquet nec dui et posuere. Duis aliquet dictum imperdiet. Duis sit amet tristique nulla. Sed et porta quam, auctor tincidunt enim. Duis elementum posuere egestas. Aliquam aliquam eros sit amet ullamcorper gravida. Sed lobortis dui sed diam pharetra, vitae iaculis ligula laoreet.
+
+Praesent ut metus ipsum. Donec vulputate, nibh eu pellentesque hendrerit, mi felis commodo mauris, a auctor elit eros ac justo. Donec sodales sodales arcu ut ullamcorper. Proin quis est a diam hendrerit dictum. Aliquam scelerisque ligula eros, ac commodo ex ornare ut. Cras porttitor turpis dui, non egestas sapien luctus in. Duis pellentesque nisl ligula, eu venenatis sem aliquet vel. Nunc enim lacus, posuere semper auctor vitae, volutpat ut tortor. Integer quis magna ut orci ullamcorper feugiat vel eu eros. Aliquam eget molestie ante. Quisque condimentum metus sit amet dolor congue, ut mattis dolor mattis. Aliquam lobortis, nunc eu elementum dictum, nulla turpis mollis lorem, at fringilla justo turpis at tellus. Cras turpis nisl, ultricies quis elementum molestie, pharetra a diam.
+        \`
     },
-    image: 'https://randomuser.me/api/portraits/med/women/83.jpg'
+    image: \`https://randomuser.me/api/portraits/med/women/83.jpg\`
 },
 cto = {
     parent: ceo,
     text: {
-        name: 'Joe Linux',
-        title: 'Chief Technology Officer'
+        name: \`Joe Linux\`,
+        title: \`Chief Technology Officer\`
     },
     stackChildren: true,
-    image: 'https://randomuser.me/api/portraits/med/women/20.jpg'
+    image: \`https://randomuser.me/api/portraits/med/women/20.jpg\`
 },
 cbo = {
     parent: ceo,
     stackChildren: true,
     text: {
-        name: 'Linda May',
-        title: 'Chief Business Officer'
+        name: \`Linda May\`,
+        title: \`Chief Business Officer\`
     },
-    image: 'https://randomuser.me/api/portraits/med/men/21.jpg'
+    image: \`https://randomuser.me/api/portraits/med/men/21.jpg\`
 },
 cdo = {
     parent: ceo,
     text: {
-        name: 'John Green',
-        title: 'Chief accounting officer',
-        contact: 'Tel: 01 213 123 134'
+        name: \`John Green\`,
+        title: \`Chief accounting officer\`,
+        contact: \`Tel: 01 213 123 134\`
     },
-    image: 'https://randomuser.me/api/portraits/med/men/32.jpg'
+    image: \`https://randomuser.me/api/portraits/med/men/32.jpg\`
 },
 cio = {
     parent: cto,
     text: {
-        name: 'Ron Blomquist',
-        title: 'Chief Information Security Officer'
+        name: \`Ron Blomquist\`,
+        title: \`Chief Information Security Officer\`
     },
-    image: 'https://randomuser.me/api/portraits/med/men/12.jpg'
+    image: \`https://randomuser.me/api/portraits/med/men/12.jpg\`
 },
 ciso = {
     parent: cto,
     text: {
-        name: 'Michael Rubin',
-        title: 'Chief Innovation Officer',
+        name: \`Michael Rubin\`,
+        title: \`Chief Innovation Officer\`,
         contact: {
-            val: 'we@aregreat.com',
-            href: 'mailto:we@aregreat.com'
+            val: \`we@aregreat.com\`,
+            href: \`mailto:we@aregreat.com\`
         }
     },
-    image: 'https://randomuser.me/api/portraits/med/men/67.jpg'
+    image: \`https://randomuser.me/api/portraits/med/men/67.jpg\`
 },
 cio2 = {
     parent: cdo,
     text: {
-        name: 'Erica Reel',
-        title: 'Chief Customer Officer'
+        name: \`Erica Reel\`,
+        title: \`Chief Customer Officer\`
     },
     link: {
-        href: 'http://www.google.com'
+        href: \`http://www.google.com\`
     },
-    image: 'https://randomuser.me/api/portraits/med/men/75.jpg'
+    image: \`https://randomuser.me/api/portraits/med/men/75.jpg\`
 },
 ciso2 = {
     parent: cbo,
     text: {
-        name: 'Alice Lopez',
-        title: 'Chief Communications Officer'
+        name: \`Alice Lopez\`,
+        title: \`Chief Communications Officer\`
     },
-    image: 'https://randomuser.me/api/portraits/med/men/85.jpg'
+    image: \`https://randomuser.me/api/portraits/med/men/85.jpg\`
 },
 ciso3 = {
     parent: cbo,
     text: {
-        name: 'Mary Johnson',
-        title: 'Chief Brand Officer'
+        name: \`Mary Johnson\`,
+        title: \`Chief Brand Officer\`
     },
-    image: 'https://randomuser.me/api/portraits/med/women/92.jpg'
+    image: \`https://randomuser.me/api/portraits/med/women/92.jpg\`
 },
 ciso4 = {
     parent: cbo,
     text: {
-        name: 'Kirk Douglas',
-        title: 'Chief Business Development Officer'
+        name: \`Kirk Douglas\`,
+        title: \`Chief Business Development Officer\`
     },
-    image: 'https://randomuser.me/api/portraits/med/men/66.jpg'
+    image: \`https://randomuser.me/api/portraits/med/men/66.jpg\`
 };
 
 var og = [

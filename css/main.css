@@ -53,7 +53,8 @@
 }
 
 .member:hover {
-    width: 350px;
+    min-width: 350px;
+    width: auto;
     height: auto;
 }
 

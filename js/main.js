@@ -142,7 +142,7 @@ var og = [
         localStorage.setItem('organogram', cache);
     }
 
-    $('body').append('<script id="treant">' + cache + ' var tree = new Treant(og); </script>');
+    $('body').append(`<script id="treant">${cache} var tree = new Treant(og, () => { document.querySelector('#organogram svg').style.height = '1000px'; }); </script>`);
 
     $('#editcode').text(cache);
 
@@ -171,7 +171,7 @@ var og = [
 <div id="organogram"></div>
 <script>${raphael}</script>
 <script>${treant}</script>
-<script>${localStorage.getItem('organogram')} new Treant(og); </script>
+<script>${localStorage.getItem('organogram')} new Treant(og, () => { document.querySelector('#organogram svg').style.height = '1000px'; }); </script>
                     `);
                 });
             });

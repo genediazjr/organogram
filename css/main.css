@@ -12,7 +12,7 @@
 }
 
 .Treant > p {
-    font-family: sans-serif;
+    font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
     font-weight: bold;
     font-size: 12px;
 }
@@ -64,9 +64,4 @@
     -o-border-radius: 38px;
     border-radius: 38px;
     margin-right: 10px;
-}
-
-html, body,
-#organogram {
-    height: 100%;
 }

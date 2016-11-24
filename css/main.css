@@ -21,15 +21,26 @@
     font-weight: bold;
 }
 
+.node-title {
+}
+
+.node-desc {
+    font-size: 12px;
+    padding: 5px 10px 20px;
+}
+
+.node-contact {
+}
+
 .member {
     -webkit-border-radius: 38px;
     -moz-border-radius: 38px;
     -o-border-radius: 38px;
     border-radius: 38px;
-    -webkit-transition: width 0.2s ease-in-out;
-    -moz-transition: width 0.2s ease-in-out;
-    -o-transition: width 0.2s ease-in-out;
-    transition: width 0.2s ease-in-out;
+    /*-webkit-transition: width 0.2s ease-in-out;*/
+    /*-moz-transition: width 0.2s ease-in-out;*/
+    /*-o-transition: width 0.2s ease-in-out;*/
+    /*transition: width 0.2s ease-in-out;*/
     overflow: hidden;
     padding: 2px;
     border: 1px solid #666666;
@@ -42,6 +53,7 @@
 
 .member:hover {
     width: 350px;
+    height: auto;
 }
 
 .member img {
@@ -50,4 +62,9 @@
     -o-border-radius: 38px;
     border-radius: 38px;
     margin-right: 10px;
+}
+
+html, body,
+#organogram {
+    height: 100%;
 }

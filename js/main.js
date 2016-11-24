@@ -36,7 +36,8 @@ cto = {
     parent: ceo,
     text: {
         name: \`Joe Linux\`,
-        title: \`Chief Technology Officer\`
+        title: \`Chief Technology Officer\`,
+        desc: \`description\`
     },
     stackChildren: true,
     image: \`https://randomuser.me/api/portraits/med/women/20.jpg\`
@@ -46,7 +47,8 @@ cbo = {
     stackChildren: true,
     text: {
         name: \`Linda May\`,
-        title: \`Chief Business Officer\`
+        title: \`Chief Business Officer\`,
+        desc: \`description\`
     },
     image: \`https://randomuser.me/api/portraits/med/men/21.jpg\`
 },
@@ -55,7 +57,8 @@ cdo = {
     text: {
         name: \`John Green\`,
         title: \`Chief accounting officer\`,
-        contact: \`Tel: 01 213 123 134\`
+        contact: \`Tel: 01 213 123 134\`,
+        desc: \`description\`
     },
     image: \`https://randomuser.me/api/portraits/med/men/32.jpg\`
 },
@@ -63,7 +66,8 @@ cio = {
     parent: cto,
     text: {
         name: \`Ron Blomquist\`,
-        title: \`Chief Information Security Officer\`
+        title: \`Chief Information Security Officer\`,
+        desc: \`description\`
     },
     image: \`https://randomuser.me/api/portraits/med/men/12.jpg\`
 },
@@ -75,7 +79,8 @@ ciso = {
         contact: {
             val: \`we@aregreat.com\`,
             href: \`mailto:we@aregreat.com\`
-        }
+        },
+        desc: \`description\`
     },
     image: \`https://randomuser.me/api/portraits/med/men/67.jpg\`
 },
@@ -83,7 +88,8 @@ cio2 = {
     parent: cdo,
     text: {
         name: \`Erica Reel\`,
-        title: \`Chief Customer Officer\`
+        title: \`Chief Customer Officer\`,
+        desc: \`description\`
     },
     link: {
         href: \`http://www.google.com\`
@@ -94,7 +100,8 @@ ciso2 = {
     parent: cbo,
     text: {
         name: \`Alice Lopez\`,
-        title: \`Chief Communications Officer\`
+        title: \`Chief Communications Officer\`,
+        desc: \`description\`
     },
     image: \`https://randomuser.me/api/portraits/med/men/85.jpg\`
 },
@@ -102,7 +109,8 @@ ciso3 = {
     parent: cbo,
     text: {
         name: \`Mary Johnson\`,
-        title: \`Chief Brand Officer\`
+        title: \`Chief Brand Officer\`,
+        desc: \`description\`
     },
     image: \`https://randomuser.me/api/portraits/med/women/92.jpg\`
 },
@@ -110,7 +118,8 @@ ciso4 = {
     parent: cbo,
     text: {
         name: \`Kirk Douglas\`,
-        title: \`Chief Business Development Officer\`
+        title: \`Chief Business Development Officer\`,
+        desc: \`description\`
     },
     image: \`https://randomuser.me/api/portraits/med/men/66.jpg\`
 };

@@ -142,7 +142,15 @@ var og = [
         localStorage.setItem('organogram', cache);
     }
 
-    $('body').append(`<script id="treant">${cache} var tree = new Treant(og, () => { document.querySelector('#organogram svg').style.height = '1050px'; }); </script>`);
+    $('body').append(`<script id="treant">${cache}
+        var tree = new Treant(og, () => {
+            var organogramSVG = document.querySelector('#organogram svg');
+            var curr_height = organogramSVG.clientHeight;
+            var curr_width = organogramSVG.clientWidth;
+            organogramSVG.style.height = curr_height + 550;
+            organogramSVG.style.width = curr_width + 250;
+        });
+    </script>`);
 
     $('#editcode').text(cache);
 
@@ -171,7 +179,15 @@ var og = [
 <div id="organogram"></div>
 <script>${raphael}</script>
 <script>${treant}</script>
-<script>${localStorage.getItem('organogram')} new Treant(og, () => { document.querySelector('#organogram svg').style.height = '1050px'; }); </script>
+<script>${localStorage.getItem('organogram')}
+new Treant(og, () => {
+    var organogramSVG = document.querySelector('#organogram svg');
+    var curr_height = organogramSVG.clientHeight;
+    var curr_width = organogramSVG.clientWidth;
+    organogramSVG.style.height = curr_height + 550;
+    organogramSVG.style.width = curr_width + 250;
+});
+</script>
                     `);
                 });
             });

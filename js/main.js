@@ -157,7 +157,7 @@ var og = [
 <div id="organogram"></div>
 <script>${raphael}</script>
 <script>${treant}</script>
-<script>${localStorage.getItem('organogram')}</script>
+<script>${localStorage.getItem('organogram')} new Treant(og); </script>
                     `);
                 });
             });

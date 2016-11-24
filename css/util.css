@@ -1,0 +1,22 @@
+body {
+    font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+    font-size: 14px;
+}
+
+.actions {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+}
+
+textarea {
+    font-family: "Consolas", monospace;
+    font-size: 14px;
+}
+
+#organogram * {
+     -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+     box-sizing: content-box;
+}

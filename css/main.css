@@ -32,43 +32,32 @@ abbr, acronym { border: 0; }
 }
 
 .member {
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
+    -webkit-border-radius: 38px;
+    -moz-border-radius: 38px;
+    -o-border-radius: 38px;
+    border-radius: 38px;
+    -webkit-transition: width 0.2s ease-in-out;
+    -moz-transition: width 0.2s ease-in-out;
+    -o-transition: width 0.2s ease-in-out;
+    transition: width 0.2s ease-in-out;
     overflow: hidden;
     padding: 2px;
     border: 1px solid #666666;
     background-color: #ffffff;
-    font-family: sans-serif;
+    font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
     font-size: 14px;
+    width: 72px;
+    height: 72px;
 }
 
 .member:hover {
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
     width: 350px;
 }
 
-.member p,
-.member a {
-    display: none;
-}
-
-.member:hover p,
-.member:hover a {
-    display: block;
-}
-
 .member img {
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-}
-
-.member:hover img {
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
+    -webkit-border-radius: 38px;
+    -moz-border-radius: 38px;
+    -o-border-radius: 38px;
+    border-radius: 38px;
     margin-right: 10px;
 }
